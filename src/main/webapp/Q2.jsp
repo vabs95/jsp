@@ -8,9 +8,23 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Q2</title>
   </head>
   <body>
-  $END$
+
+
+  <%
+    int n = Integer.parseInt(request.getParameter("no"));
+  %>
+
+  <% for(int i = 0; i<=n; i+=1)
+  {
+  %>
+
+  <%= i%><br>
+
+  <%
+    }
+  %>
   </body>
 </html>
