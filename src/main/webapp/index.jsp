@@ -11,17 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  <form name="loginForm" method="post" action="Login">
-    email:
-    <input type="email" name="email"><br>
-    Password:
-    <input type="password" name="pass"><br>
-    <input type="submit" value="signIn">
 
-  </form>
-  <form method="post" action="register">
-    <input type="submit" value="signUp">
-
-  </form>
   </body>
 </html>
