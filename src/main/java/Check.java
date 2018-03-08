@@ -22,16 +22,19 @@ public class Check extends HttpServlet {
         if(Valid1.checkUser(email, pass))
         {
 
-            RequestDispatcher rs = request.getRequestDispatcher("Welcome.jsp");
+//            RequestDispatcher rs = request.getRequestDispatcher("Welcome.jsp");
             HttpSession session=request.getSession ();
             session.setAttribute ( "email",email );
-            rs.forward (request, response);
+//            rs.forward (request, response;);
+
+            response.sendRedirect ( "Welcome.jsp" );
         }
         else
         {
             out.println("Username or Password incorrect");
             RequestDispatcher rs = request.getRequestDispatcher("index.html");
             rs.include(request, response);
+//            response.sendRedirect ( "index.html" );
         }
     }
 }
