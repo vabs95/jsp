@@ -16,7 +16,7 @@
         String pass = request.getParameter("pass1");
         System.out.println(email + " " + pass + "  " );
 
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/blog" , "root" , "ttn");
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/login" , "root" , "igdefault");
         PreparedStatement stmt = connection.prepareStatement(" insert into user (email,pass) values(?,?);");
         stmt.setString(1 , email);
         stmt.setString(2 , pass);
